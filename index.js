@@ -14,10 +14,6 @@ async function shortenUrl() {
 
 
 
-
-
-// shortenUrl();
-
 form.addEventListener('submit', (event) => {
     event.preventDefault()
 
