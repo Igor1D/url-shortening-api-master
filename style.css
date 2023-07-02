@@ -4,6 +4,7 @@ body {
     flex-direction: column;
     margin: 0;
     min-height: 100vh;
+    font-family: 'Poppins';
    
     
 
@@ -15,10 +16,8 @@ header {
     border: 5px solid black;
     min-height: 6vh;
 
-    
-
-
 }
+
 
 nav {
     display: flex;
@@ -40,48 +39,125 @@ main {
     
 }
 
-.container {
+#titleStartedInfo {
+    font-size: 60px;
+    line-height: 75px;
+    color: hsl(260, 8%, 14%);
+    margin-bottom: 0;
+    margin-top: 50px;
+    font-weight: 700;
+  }
+  
+  #pStartedInfo {
+      margin-top: 0;
+      font-size: 18px;
+  }
+  
+  #illustImg {
+      width: 100%;
+      margin-left: 50px;
+  }
+  
+  
+  
+  p {
+      color: hsl(257, 7%, 63%);
+      font-weight: 500;
+  }
 
+  
+
+
+  #input {
+    /* width: 700px; */
+    width: 80%;
+    padding-left: 20px;
+    height: 43px;
+    border-radius: 5px;
+    border: none;
+    
+  }
+
+.container {
+    display: flex;
+    flex-direction: column;
     border: 5px solid blue;
     min-height: 80vh;
-    width: 50%;
+    width: 40%;
 }
 
 
 .getStartedDiv {
-    border: 5px solid rgb(255, 0, 0);
     display: flex;
     flex-direction: row;
     height: 30vh;
 }
 
 .getStartedInfo {
-    border: 5px solid rgb(247, 0, 255);
     width: 50%;
 }
 
 .getStartedPic {
-    border: 5px solid rgb(255, 0, 4);
-    width: 50%;
+
+    width: 60%;
 }
 
 .shortUrlDiv {
-    padding-left: 20px;
-    padding-right: 20px;
-    border: 5px solid rgb(81, 255, 0);
-    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    height: 10vh;
+    background-image: url(./images/bg-shorten-desktop.svg);
+    background-color: hsl(255, 11%, 22%);
+    border-radius: 10px;
+    margin-top: 20px;
+
+
 }
 
 #form {
-
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
-    border: 5px solid rgb(0, 221, 255);
+    
+
 
 }
 
 
 footer {
     border: 5px solid rgb(11, 231, 66);
+}
+
+/* Btns */
+
+#btnGetStarted {
+    background-color: hsl(180, 66%, 49%);
+    border:none;
+    border-radius:25px;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    width: 150px;
+    height: 40px;
+    margin-top: 20px;
+}
+
+#btnSubmit {
+    background-color: hsl(180, 66%, 49%);
+    border:none;
+    border-radius:10px;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    width: 140px;
+    height: 45px;
+    margin-left: 20px;
+
+
 }
 
 @media (max-width: 1300px)  {

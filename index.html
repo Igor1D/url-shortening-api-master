@@ -8,20 +8,15 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+
 
   <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
+  
 </head>
 
 <body>
@@ -52,15 +47,18 @@
 
       <div class="getStartedInfo">
 
-      More than just shorter links
+      <h1 id="titleStartedInfo">More than just shorter links</h1>
 
-      Build your brands recognition and get detailed insights
-      on how your links are performing.
+      <p id="pStartedInfo">Build your brands recognition and get detailed <br> insights
+      on how your links are performing.</p>
 
-      Get Started
+      <button id="btnGetStarted">Get Started</button>
     </div>
 
-    <div class="getStartedPic"></div>
+    <div class="getStartedPic">
+
+      <img src="./images/illustration-working.svg" id="illustImg" alt="illustration-working">
+    </div>
 
     </div>
 
@@ -70,35 +68,39 @@
 
       <form id="form">
         <input type="text" id="input" placeholder="Shorten a link here...">
-        <button type="submit">Shorten It!</button>
+        <button type="submit" id="btnSubmit">Shorten It!</button>
 
       </form>
-      </div>
+    </div>
     
 
 
     <div class="advStatDiv">
 
-      Advanced Statistics
+      <h2 id="advStatTitle">Advanced Statistics</h2>
 
-      Track how your links are performing across the web with our
-      advanced statistics dashboard.
+      <p>Track how your links are performing across the web with our
+      advanced statistics dashboard.</p>
 
-      Brand Recognition
+      <div class="brandSquare">
+        Brand Recognition
 
       Boost your brand recognition with each click. Generic links don’t
       mean a thing. Branded links help instil confidence in your content.
-
-      Detailed Records
+      </div>
+      <div class="recordsSquare">
+        Detailed Records
 
       Gain insights into who is clicking your links. Knowing when and where
       people engage with your content helps inform better decisions.
-
+    </div>
+      
+    <div class="customizeSquare">
       Fully Customizable
 
       Improve brand awareness and content discoverability through customizable
       links, supercharging audience engagement.
-
+    </div>
     </div>
     </div>
   </main>
