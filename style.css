@@ -105,7 +105,6 @@ main {
 .shortUrlDiv {
     display: flex;
     justify-content: center;
-    align-items: center;
     padding-left: 40px;
     padding-right: 40px;
     height: 10vh;
@@ -113,8 +112,6 @@ main {
     background-color: hsl(255, 11%, 22%);
     border-radius: 10px;
     margin-top: 20px;
-
-
 }
 
 #form {
@@ -122,10 +119,123 @@ main {
     justify-content: center;
     align-items: center;
     width: 100%;
-    
+}
+
+.advStatDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: hsla(230, 25%, 95%, 1);
+    /* height: 40vh; */
+
 
 
 }
+#advStatTitle {
+    margin-top: 100px;
+    margin-bottom: 0;
+    font-size: 30px;
+    color: hsl(255, 11%, 22%);
+}
+
+#advStatP {
+    margin-top: 10px;
+    margin-bottom: 80px;
+    text-align: center;
+    width: 50%;
+    font-size: 16px;
+}
+
+#squaresDiv {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+.square {
+    position: relative;
+    border: 3px solid red;
+    background-color: white;
+    padding: 20px;
+
+}
+
+.icon {
+    top: -30px;
+    position: absolute;
+    border: 1px solid black;
+    width: 30px;
+    padding: 16px;
+    border-radius: 100%;
+    overflow: visible;
+    background-color: hsl(255, 11%, 22%);
+
+    
+}
+
+.squareTitle {
+    margin-top: 40px;
+    color: hsl(255, 11%, 22%);
+    font-weight: 700;
+    font-size: 16px;
+
+}
+
+.squareText {
+    font-size: 14px;
+}
+
+.recordsSquare {
+    margin-top: 50px;
+}
+
+#boostLinkDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 20vh;
+    border: 1px solid red;
+    background-image: url(./images/bg-boost-desktop.svg);
+    background-color: hsl(255, 11%, 22%);
+    background-size: cover;
+}
+
+#boostTitle {
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+
+#footerDiv {
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    height: 25vh;
+    background-color: hsl(260, 8%, 14%) ;
+}
+
+#footerLogo {
+    filter: brightness(0) invert(1);
+}
+
+.footerColumn {
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footerLink {
+    text-decoration: none;
+    color: white
+}
+
 
 
 footer {
@@ -134,15 +244,15 @@ footer {
 
 /* Btns */
 
-#btnGetStarted {
+.mainBtn {
     background-color: hsl(180, 66%, 49%);
     border:none;
     border-radius:25px;
     color: white;
-    font-size: 14px;
-    font-weight: 700;
-    width: 150px;
-    height: 40px;
+    font-size: 18px;
+    font-weight: 600;
+    width: 180px;
+    height: 50px;
     margin-top: 20px;
 }
 
@@ -159,6 +269,8 @@ footer {
 
 
 }
+
+
 
 @media (max-width: 1300px)  {
     .container {

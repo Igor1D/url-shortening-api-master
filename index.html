@@ -10,30 +10,31 @@
   <link rel="stylesheet" href="./style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
 
 
   <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  
+
 </head>
 
 <body>
 
   <header>
-    <img src="./images/logo.svg" alt="logo">
-    
+    <img src="./images/logo.svg" id="headerLogo" class="logo" alt="logo">
+
     <nav>
       <div class="links">
-      <a href="">Features</a>
-      <a href="">Pricing</a>
-      <a href="">Resources</a>
-       </div>
+        <a href="">Features</a>
+        <a href="">Pricing</a>
+        <a href="">Resources</a>
+      </div>
 
-       <div class="navBtns">
-      Login
-      Sign Up
+      <div class="navBtns">
+        Login
+        Sign Up
       </div>
     </nav>
   </header>
@@ -43,102 +44,128 @@
     <div class="container">
 
 
-    <div class="getStartedDiv">
+      <div class="getStartedDiv">
 
-      <div class="getStartedInfo">
+        <div class="getStartedInfo">
 
-      <h1 id="titleStartedInfo">More than just shorter links</h1>
+          <h1 id="titleStartedInfo">More than just shorter links</h1>
 
-      <p id="pStartedInfo">Build your brands recognition and get detailed <br> insights
-      on how your links are performing.</p>
+          <p id="pStartedInfo">Build your brands recognition and get detailed <br> insights
+            on how your links are performing.</p>
 
-      <button id="btnGetStarted">Get Started</button>
-    </div>
+          <button class="mainBtn">Get Started</button>
+        </div>
 
-    <div class="getStartedPic">
+        <div class="getStartedPic">
 
-      <img src="./images/illustration-working.svg" id="illustImg" alt="illustration-working">
-    </div>
+          <img src="./images/illustration-working.svg" id="illustImg" alt="illustration-working">
+        </div>
 
-    </div>
-
-
-
-    <div class="shortUrlDiv">
-
-      <form id="form">
-        <input type="text" id="input" placeholder="Shorten a link here...">
-        <button type="submit" id="btnSubmit">Shorten It!</button>
-
-      </form>
-    </div>
-    
-
-
-    <div class="advStatDiv">
-
-      <h2 id="advStatTitle">Advanced Statistics</h2>
-
-      <p>Track how your links are performing across the web with our
-      advanced statistics dashboard.</p>
-
-      <div class="brandSquare">
-        Brand Recognition
-
-      Boost your brand recognition with each click. Generic links don’t
-      mean a thing. Branded links help instil confidence in your content.
       </div>
-      <div class="recordsSquare">
-        Detailed Records
 
-      Gain insights into who is clicking your links. Knowing when and where
-      people engage with your content helps inform better decisions.
-    </div>
-      
-    <div class="customizeSquare">
-      Fully Customizable
 
-      Improve brand awareness and content discoverability through customizable
-      links, supercharging audience engagement.
-    </div>
-    </div>
-    </div>
+
+      <div class="shortUrlDiv">
+
+        <form id="form">
+          <input type="text" id="input" placeholder="Shorten a link here...">
+          <button type="submit" id="btnSubmit">Shorten It!</button>
+
+        </form>
+      </div>
+
+
+
+      <div class="advStatDiv">
+
+        <h2 id="advStatTitle">Advanced Statistics</h2>
+
+        <p id="advStatP">Track how your links are performing across the web with our
+          advanced statistics dashboard.</p>
+
+        <div id="squaresDiv">
+
+          <div class="square" id="brandSquare">
+            <img src="./images/icon-brand-recognition.svg" class="icon" id="icon-brand" alt="icon-brand-recognition">
+            <p class="squareTitle">Brand Recognition</p>
+
+            <p class="squareText">Boost your brand recognition with each click. Generic links don’t
+            mean a thing. Branded links help instil confidence in your content.</p>
+          </div>
+          <div class="square" id="recordsSquare">
+            <img src="./images/icon-detailed-records.svg" class="icon" id="icon-detailed" alt="icon-detailed-records">
+
+            <p class="squareTitle">Detailed Records</p>
+
+            <p class="squareText">Gain insights into who is clicking your links. Knowing when and where
+            people engage with your content helps inform better decisions.</p>
+          </div>
+
+          <div class="square" id="customizeSquare">
+            <img src="./images/icon-fully-customizable.svg" class="icon" id="icon-fully" alt="icon-fully-customizable">
+            <p class="squareTitle">Fully Customizable</p>
+
+            <p class="squareText">Improve brand awareness and content discoverability through customizable
+            links, supercharging audience engagement.</p>
+          </div>
+        </div>
+      </div>
   </main>
 
   <footer>
-    <div class="boostLinkDiv">
+    <div id="boostLinkDiv">
 
-      Boost your links today
+      <p id="boostTitle">Boost your links today</p>
 
-      Get Started
+      <button class="mainBtn">Get Started</button>
     </div>
-    <div class="footerDiv">
-      Features
+    <div id="footerDiv">
 
-      Link Shortening
-      Branded Links
-      Analytics
+      <img src="./images/logo.svg" id="footerLogo" class="logo" alt="logo">
 
-      Resources
+      <div class="footerColumn" id="featuresDiv">
+      <p>Features</p>
 
-      Blog
-      Developers
-      Support
+      <a href="" class="footerLink">Link Shortening</a>
+      <a href="" class="footerLink">Branded Links</a>
+      <a href="" class="footerLink">Analytics</a>
+      </div>
 
-      Company
+      <div class="footerColumn" id="resourcesDiv">
+      <p>Resources</p>
 
-      About
-      Our Team
-      Careers
-      Contact
+      <a href="" class="footerLink">Blog</a>
+      <a href="" class="footerLink">Developers</a>
+      <a href="" class="footerLink">Support</a>
+      </div>
+
+      <div class="footerColumn" id="companyDiv">
+      <p>Company</p>
+
+      <a href="" class="footerLink">About</a>
+      <a href="" class="footerLink">Our Team</a>
+      <a href="" class="footerLink">Careers</a>
+      <a href="" class="footerLink">Contact</a>
+      </div>
+
+
+      <div id="socialIconsDiv">
+
+        <a href="" class="socialIcon"><img src="./images/icon-facebook.svg" alt=""></a>
+        <a href="" class="socialIcon"><img src="./images/icon-twitter.svg" alt=""></a>
+        <a href="" class="socialIcon"><img src="./images/icon-pinterest.svg" alt=""></a>
+        <a href="" class="socialIcon"><img src="./images/icon-instagram.svg" alt=""></a>
+      </div>
+
+    
     </div>
 
   </footer>
 
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
-  </div>
+  </div> -->
   <script src="./index.js"></script>
 </body>
 
