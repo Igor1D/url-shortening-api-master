@@ -1,5 +1,5 @@
 body {
-    border: 5px solid red;
+    /* border: 5px solid red; */
     display: flex;
     flex-direction: column;
     margin: 0;
@@ -13,7 +13,7 @@ body {
 header {
     display: flex;
     justify-content: flex-start;
-    border: 5px solid black;
+    /* border: 5px solid black; */
     min-height: 6vh;
 
 }
@@ -21,30 +21,65 @@ header {
 
 nav {
     display: flex;
-    border: 5px solid rgb(0, 255, 217);
+    /* border: 5px solid rgb(0, 255, 217); */
     flex: 1;
     flex-direction: row;
     justify-content: space-between;
-    margin-left: 30px;
-    margin-right: 30px;
+    margin-left: 50px;
+    margin-right: 160px;
+
+}
+
+#headerLogoDiv {
+    display: flex;
+    align-items: center;
+    padding-left: 170px;
+    width: 180px;
+}
+
+#headerLogo {
+    width: 100%;
+
+}
+
+.linksDiv {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 14%;
+
+}
+
+.menuLink {
+    text-decoration: none;
+    color: hsl(257, 7%, 63%);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.navBtnsDiv {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 
 }
 
 main {
     display: flex;
     justify-content: center;
-    border: 5px solid rgb(214, 85, 5);
     
     
     
 }
 
 #titleStartedInfo {
-    font-size: 60px;
+    font-size: 70px;
     line-height: 75px;
     color: hsl(260, 8%, 14%);
-    margin-bottom: 0;
-    margin-top: 50px;
+    margin-bottom: 5px;
+    margin-top: 70px;
     font-weight: 700;
   }
   
@@ -54,8 +89,10 @@ main {
   }
   
   #illustImg {
-      width: 100%;
-      margin-left: 50px;
+
+    width: 160%;
+
+
   }
   
   
@@ -81,28 +118,28 @@ main {
 .container {
     display: flex;
     flex-direction: column;
-    border: 5px solid blue;
     min-height: 80vh;
     width: 40%;
+    padding-bottom: 130px;
 }
 
 
 .getStartedDiv {
     display: flex;
     flex-direction: row;
-    height: 30vh;
+    height: 35vh;
 }
 
 .getStartedInfo {
-    width: 50%;
-}
-
-.getStartedPic {
-
     width: 60%;
 }
 
+.getStartedPic {
+    width: 40%;
+}
+
 .shortUrlDiv {
+    position: relative;
     display: flex;
     justify-content: center;
     padding-left: 40px;
@@ -121,13 +158,22 @@ main {
     width: 100%;
 }
 
+#greyBgDiv {
+    position: absolute;
+    top: 65px;
+    background-color: hsla(230, 25%, 95%, 1);
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
 .advStatDiv {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     background-color: hsla(230, 25%, 95%, 1);
-    /* height: 40vh; */
+    /* height: 200vh; */
 
 
 
@@ -135,7 +181,7 @@ main {
 #advStatTitle {
     margin-top: 100px;
     margin-bottom: 0;
-    font-size: 30px;
+    font-size: 40px;
     color: hsl(255, 11%, 22%);
 }
 
@@ -144,21 +190,30 @@ main {
     margin-bottom: 80px;
     text-align: center;
     width: 50%;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 #squaresDiv {
+    position: relative;
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    gap: 15px;
 }
 
 .square {
     position: relative;
-    border: 3px solid red;
     background-color: white;
     padding: 20px;
 
+}
+
+#lineDiv {
+    position: absolute;
+    height: 10px;
+    width: 100%;
+    background-color: hsl(180, 66%, 49%);
+    top: 50%;
 }
 
 .icon {
@@ -178,16 +233,27 @@ main {
     margin-top: 40px;
     color: hsl(255, 11%, 22%);
     font-weight: 700;
-    font-size: 16px;
+    font-size: 18px;
 
 }
 
 .squareText {
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 500;
 }
 
-.recordsSquare {
+#brandSquare {
+    margin-bottom: 100px;
+}
+
+#recordsSquare {
     margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#customizeSquare {
+    margin-top: 100px;
+
 }
 
 #boostLinkDiv {
@@ -196,7 +262,6 @@ main {
     align-items: center;
     flex-direction: column;
     height: 20vh;
-    border: 1px solid red;
     background-image: url(./images/bg-boost-desktop.svg);
     background-color: hsl(255, 11%, 22%);
     background-size: cover;
@@ -215,14 +280,16 @@ main {
     display: flex;
     justify-content: center;
     justify-content: space-around;
-    align-items: center;
     flex-direction: row;
-    height: 25vh;
-    background-color: hsl(260, 8%, 14%) ;
+    height: 20vh;
+    background-color: hsl(260, 8%, 14%);
+    padding-top: 80px;
 }
 
 #footerLogo {
     filter: brightness(0) invert(1);
+    width: 170px;
+    height: 45px;
 }
 
 .footerColumn {
@@ -236,11 +303,20 @@ main {
     color: white
 }
 
+.footerTitle {
 
-
-footer {
-    border: 5px solid rgb(11, 231, 66);
+    margin-top:0;
 }
+
+#socialIconsDiv {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    width: 150px;
+
+    
+}
+
 
 /* Btns */
 
@@ -254,6 +330,7 @@ footer {
     width: 180px;
     height: 50px;
     margin-top: 20px;
+    cursor: pointer;
 }
 
 #btnSubmit {
@@ -261,32 +338,48 @@ footer {
     border:none;
     border-radius:10px;
     color: white;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 700;
     width: 140px;
     height: 45px;
     margin-left: 20px;
+    cursor: pointer;
 
 
 }
 
+#signUpBtn {
+    width: 130px;
+    height: 40px;
+    font-size: 16px;
+    margin-top: 0;
+    margin-left: 30px;
+}
 
 
-@media (max-width: 1300px)  {
+
+@media (max-width: 2000px)  {
     .container {
-        width: 60%;
+        width: 65%;
     }
 }
 
-@media (max-width: 1000px)  {
+
+@media (max-width: 1300px)  {
     .container {
         width: 70%;
     }
 }
 
+@media (max-width: 1000px)  {
+    .container {
+        width: 75%;
+    }
+}
+
 @media (max-width: 600px)  {
     .container {
-        width: 80%;
+        width: 85%;
     }
 }
 

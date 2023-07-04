@@ -23,18 +23,18 @@
 <body>
 
   <header>
-    <img src="./images/logo.svg" id="headerLogo" class="logo" alt="logo">
+    <div id="headerLogoDiv"><img src="./images/logo.svg" id="headerLogo" class="logo" alt="logo"></div>
 
     <nav>
-      <div class="links">
-        <a href="">Features</a>
-        <a href="">Pricing</a>
-        <a href="">Resources</a>
+      <div class="linksDiv">
+        <a href="" class="menuLink" >Features</a>
+        <a href="" class="menuLink">Pricing</a>
+        <a href="" class="menuLink">Resources</a>
       </div>
 
-      <div class="navBtns">
-        Login
-        Sign Up
+      <div class="navBtnsDiv">
+        <a href="" class="menuLink" >Login</a>
+        <button class="mainBtn" id="signUpBtn">Sign Up</button>
       </div>
     </nav>
   </header>
@@ -72,6 +72,9 @@
           <button type="submit" id="btnSubmit">Shorten It!</button>
 
         </form>
+
+        <div id="greyBgDiv"></div>
+
       </div>
 
 
@@ -84,6 +87,8 @@
           advanced statistics dashboard.</p>
 
         <div id="squaresDiv">
+
+          <div id="lineDiv"></div>
 
           <div class="square" id="brandSquare">
             <img src="./images/icon-brand-recognition.svg" class="icon" id="icon-brand" alt="icon-brand-recognition">
@@ -124,7 +129,7 @@
       <img src="./images/logo.svg" id="footerLogo" class="logo" alt="logo">
 
       <div class="footerColumn" id="featuresDiv">
-      <p>Features</p>
+      <p class="footerTitle">Features</p>
 
       <a href="" class="footerLink">Link Shortening</a>
       <a href="" class="footerLink">Branded Links</a>
@@ -132,7 +137,7 @@
       </div>
 
       <div class="footerColumn" id="resourcesDiv">
-      <p>Resources</p>
+      <p class="footerTitle">Resources</p>
 
       <a href="" class="footerLink">Blog</a>
       <a href="" class="footerLink">Developers</a>
@@ -140,7 +145,7 @@
       </div>
 
       <div class="footerColumn" id="companyDiv">
-      <p>Company</p>
+      <p class="footerTitle">Company</p>
 
       <a href="" class="footerLink">About</a>
       <a href="" class="footerLink">Our Team</a>
