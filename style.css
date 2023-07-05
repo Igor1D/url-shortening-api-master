@@ -14,7 +14,7 @@ header {
     display: flex;
     justify-content: flex-start;
     /* border: 5px solid black; */
-    min-height: 6vh;
+    min-height: 100px;
 
 }
 
@@ -127,7 +127,7 @@ main {
 .getStartedDiv {
     display: flex;
     flex-direction: row;
-    height: 35vh;
+    /* height: 35vh; */
 }
 
 .getStartedInfo {
@@ -144,7 +144,7 @@ main {
     justify-content: center;
     padding-left: 40px;
     padding-right: 40px;
-    height: 10vh;
+    height: 120px;
     background-image: url(./images/bg-shorten-desktop.svg);
     background-color: hsl(255, 11%, 22%);
     border-radius: 10px;
@@ -160,10 +160,10 @@ main {
 
 #greyBgDiv {
     position: absolute;
-    top: 65px;
+    top: 60px;
     background-color: hsla(230, 25%, 95%, 1);
-    width: 100vw;
-    height: 100vh;
+    width: 99.3vw;
+    height: 110vh;
     z-index: -1;
 }
 
@@ -205,6 +205,26 @@ main {
     position: relative;
     background-color: white;
     padding: 20px;
+
+}
+
+.urlDiv {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    width: 100%;
+    border-radius: 8px;
+    /* margin-left: 15px; */
+
+}
+
+
+
+.shortUrlBtn {
+    display: flex;
+    align-items: center;
+    gap: 40px;
 
 }
 
@@ -356,6 +376,24 @@ main {
     margin-left: 30px;
 }
 
+#copyBtn {
+    margin-top: 0;
+    margin-right: 15px;
+    padding: 0;
+    border-radius:10px;
+    font-size: 14px;
+    font-weight: 700;
+    width: 90px;
+    height: 38px;
+    cursor: pointer;
+
+}
+
+.longUrl {
+    margin-left: 15px;
+    color: hsl(255, 11%, 22%);
+}
+
 
 
 @media (max-width: 2000px)  {
@@ -375,6 +413,31 @@ main {
     .container {
         width: 75%;
     }
+}
+
+@media (max-width: 700px)  {
+   nav {
+    position: absolute;
+    top: 100px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    flex-direction: column;
+   }
+
+   .linksDiv {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+   }
+   .navBtnsDiv {
+    display: flex;
+    flex-direction: column;
+
+   }
+
+   #signUpBtn {
+    margin: 0;
+   }
 }
 
 @media (max-width: 600px)  {
