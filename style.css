@@ -30,6 +30,14 @@ nav {
 
 }
 
+#menuToggleDiv {
+    display: none;
+}
+
+#mobileLine {
+    display: none;
+}
+
 #headerLogoDiv {
     display: flex;
     align-items: center;
@@ -417,18 +425,49 @@ main {
 
 @media (max-width: 700px)  {
    nav {
+    padding-top: 10px;
+    padding-bottom: 25px;
     position: absolute;
     top: 100px;
-    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
     flex-direction: column;
+    background-color:  hsl(257, 27%, 26%);
+    border-radius: 15px;
+    width: 80%;
+    margin: 0;
+    right: 45px;
+    height: 350px;
+    justify-content: space-around;
+    align-items: center;
+    
+   }
+   #mobileLine {
+    display: block;
+    text-align: center;
+    height: 1px;
+    background-color: hsl(257, 7%, 63%);
+    width: 80%;
+    margin: 0 auto;
+    
+
    }
 
    .linksDiv {
     display: flex;
     flex-direction: column;
     width: 100%;
+   }
+
+   .menuLink {
+    padding: 20px;
+    color: white;
+    font-size: 18px;
 
    }
+
+   #signUpBtn {
+    width: 300%;
+   }
+
    .navBtnsDiv {
     display: flex;
     flex-direction: column;
@@ -438,6 +477,29 @@ main {
    #signUpBtn {
     margin: 0;
    }
+
+   #menuToggleDiv {
+    display: flex;
+    display: block;
+    position: relative;
+    /* width: 100px;
+    height: 100px; */
+}
+
+#menu-toggle{
+    bottom: 380px;
+    left: 190px;
+    position: absolute;
+    font-size: 50px;
+    color: hsl(0, 0%, 75%);
+}
+
+#headerLogoDiv{
+    padding: 0;
+    margin-left: 40px;
+}
+
+
 }
 
 @media (max-width: 600px)  {
