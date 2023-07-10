@@ -9,7 +9,7 @@ async function shortenUrl() {
     let shortenLinks = document.getElementById('shortenLinks');
     
     urlDiv.classList.add('urlDiv');
-    urlDiv.innerHTML = `<p class="longUrl">${input.value}</p> <div class="shortUrlBtn"><p id="shortUrl">${shortenLink}</p> <button id="copyBtn" class="mainBtn" onclick="copyFunction()">Copy</button></div>`;
+    urlDiv.innerHTML = `<p class="longUrl">${input.value}</p> <div class="shortUrlBtn"><p id="shortUrl">${shortenLink}</p> <button id="copyBtn" class="mainBtn" onclick="copyFunction()">Copy</button></div>` + `<div id="mobileLineDivider"></div>`;
     shortenLinks.appendChild(urlDiv);
     let copyBtn = document.getElementById('copyBtn');
     

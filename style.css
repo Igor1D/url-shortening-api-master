@@ -5,8 +5,8 @@ body {
     margin: 0;
     min-height: 100vh;
     font-family: 'Poppins';
-   
-    
+
+
 
 }
 
@@ -77,9 +77,9 @@ nav {
 main {
     display: flex;
     justify-content: center;
-    
-    
-    
+
+
+
 }
 
 #titleStartedInfo {
@@ -89,39 +89,39 @@ main {
     margin-bottom: 5px;
     margin-top: 70px;
     font-weight: 700;
-  }
-  
-  #pStartedInfo {
-      margin-top: 0;
-      font-size: 18px;
-  }
-  
-  #illustImg {
+}
+
+#pStartedInfo {
+    margin-top: 0;
+    font-size: 18px;
+}
+
+#illustImg {
 
     width: 160%;
 
 
-  }
-  
-  
-  
-  p {
-      color: hsl(257, 7%, 63%);
-      font-weight: 500;
-  }
-
-  
+}
 
 
-  #input {
+
+p {
+    color: hsl(257, 7%, 63%);
+    font-weight: 500;
+}
+
+
+
+
+#input {
     /* width: 700px; */
     width: 80%;
     padding-left: 20px;
     height: 43px;
     border-radius: 5px;
     border: none;
-    
-  }
+
+}
 
 .container {
     display: flex;
@@ -136,6 +136,7 @@ main {
     display: flex;
     flex-direction: row;
     /* height: 35vh; */
+
 }
 
 .getStartedInfo {
@@ -181,11 +182,13 @@ main {
     align-items: center;
     flex-direction: column;
     background-color: hsla(230, 25%, 95%, 1);
+    /* background */
     /* height: 200vh; */
 
 
 
 }
+
 #advStatTitle {
     margin-top: 100px;
     margin-bottom: 0;
@@ -254,7 +257,7 @@ main {
     overflow: visible;
     background-color: hsl(255, 11%, 22%);
 
-    
+
 }
 
 .squareTitle {
@@ -333,7 +336,7 @@ main {
 
 .footerTitle {
 
-    margin-top:0;
+    margin-top: 0;
 }
 
 #socialIconsDiv {
@@ -342,7 +345,7 @@ main {
     flex-direction: row;
     width: 150px;
 
-    
+
 }
 
 
@@ -350,8 +353,8 @@ main {
 
 .mainBtn {
     background-color: hsl(180, 66%, 49%);
-    border:none;
-    border-radius:25px;
+    border: none;
+    border-radius: 25px;
     color: white;
     font-size: 18px;
     font-weight: 600;
@@ -363,8 +366,8 @@ main {
 
 #btnSubmit {
     background-color: hsl(180, 66%, 49%);
-    border:none;
-    border-radius:10px;
+    border: none;
+    border-radius: 10px;
     color: white;
     font-size: 16px;
     font-weight: 700;
@@ -388,7 +391,7 @@ main {
     margin-top: 0;
     margin-right: 15px;
     padding: 0;
-    border-radius:10px;
+    border-radius: 10px;
     font-size: 14px;
     font-weight: 700;
     width: 90px;
@@ -402,151 +405,306 @@ main {
     color: hsl(255, 11%, 22%);
 }
 
+header {
+    /* width: ; */
+}
 
 
-@media (max-width: 2000px)  {
+
+@media (max-width: 2000px) {
     .container {
         width: 65%;
     }
 }
 
 
-@media (max-width: 1300px)  {
+@media (max-width: 1300px) {
     .container {
         width: 70%;
     }
 }
 
-@media (max-width: 1000px)  {
+@media (max-width: 1000px) {
     .container {
         width: 75%;
     }
 }
 
-@media (max-width: 700px)  {
-   nav {
-    padding-top: 10px;
-    padding-bottom: 25px;
-    position: absolute;
-    top: 100px;
-    flex-direction: column;
-    background-color:  hsl(257, 27%, 26%);
-    border-radius: 15px;
-    width: 80%;
-    margin: 0;
-    right: 45px;
-    height: 350px;
-    justify-content: space-around;
-    align-items: center;
-    
-   }
-   #mobileLine {
-    display: block;
-    text-align: center;
-    height: 1px;
-    background-color: hsl(257, 7%, 63%);
-    width: 80%;
-    margin: 0 auto;
-    
+@media (max-width: 700px) {
+    nav {
+        padding-top: 10px;
+        padding-bottom: 25px;
+        position: absolute;
+        top: 100px;
+        flex-direction: column;
+        background-color: hsl(257, 27%, 26%);
+        border-radius: 15px;
+        width: 80%;
+        margin: 0;
+        right: 45px;
+        height: 350px;
+        justify-content: space-around;
+        align-items: center;
 
-   }
-
-   .linksDiv {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-   }
-
-   .menuLink {
-    padding: 20px;
-    color: white;
-    font-size: 18px;
-
-   }
-
-   #signUpBtn {
-    width: 300%;
-   }
-
-   .navBtnsDiv {
-    display: flex;
-    flex-direction: column;
-
-   }
-
-   #signUpBtn {
-    margin: 0;
-   }
-
-   #menuToggleDiv {
-    display: flex;
-    display: block;
-    position: relative;
-    /* width: 100px;
-    height: 100px; */
-}
-
-#menu-toggle{
-    bottom: 380px;
-    left: 190px;
-    position: absolute;
-    font-size: 50px;
-    color: hsl(0, 0%, 75%);
-}
-
-#headerLogoDiv{
-    padding: 0;
-    margin-left: 40px;
-}
-
-#footerDiv {
-    flex-direction: column;
-    height: 50vh;
-    align-items: center;
-    padding-bottom: 30px;
-    padding-top: 30px;
-}
-.footerColumn {
-    align-items: center;
-}
-
-.footerTitle {
-    margin: 0;
-    padding-bottom: 8px;
-}
-
-#boostTitle {
-    font-size: 35px;
-}
-
-#squaresDiv {
-    flex-direction: column;
-    width: 80%;
-    
-}
-
-#square {
-    /* display: flex; */
-    /* justify-content: center;
-    flex-direction: column; */
-    /* align-items: center; */
-
-}
-
-.squareText {
-
-}
-
-
-@media (max-width: 600px)  {
-    .container {
-        width: 85%;
     }
-}
 
-@media (max-width: 500px)  {
-    .container {
+    #mobileLine {
+        display: block;
+        text-align: center;
+        height: 1px;
+        background-color: hsl(258, 6%, 35%);
+        width: 80%;
+        margin: 0 auto;
+
+
+    }
+
+    .linksDiv {
+        display: flex;
+        flex-direction: column;
         width: 100%;
     }
-}
 
+    .menuLink {
+        padding: 20px;
+        color: white;
+        font-size: 18px;
+
+    }
+
+    #signUpBtn {
+        width: 300%;
+    }
+
+    .navBtnsDiv {
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    #signUpBtn {
+        margin: 0;
+    }
+
+    #menuToggleDiv {
+        display: flex;
+        display: block;
+        position: relative;
+        /* width: 100px;
+    height: 100px; */
+    }
+
+    #menu-toggle {
+        bottom: 380px;
+        left: 170px;
+        position: absolute;
+        font-size: 50px;
+        color: hsl(0, 0%, 75%);
+    }
+
+    #headerLogoDiv {
+        padding: 0;
+        margin-left: 40px;
+    }
+
+    #footerDiv {
+        flex-direction: column;
+        height: 50vh;
+        align-items: center;
+        padding-bottom: 30px;
+        padding-top: 30px;
+    }
+
+    .footerColumn {
+        align-items: center;
+    }
+
+    .footerTitle {
+        margin: 0;
+        padding-bottom: 8px;
+    }
+
+    #boostTitle {
+        font-size: 35px;
+    }
+
+    #squaresDiv {
+        flex-direction: column;
+        width: 80%;
+        gap: 25px;
+
+    }
+
+    .square {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* Horizontal alignment*/
+        align-items: center;
+        /* Vertical alignment */
+    }
+
+    .squareText {
+        text-align: center;
+
+    }
+
+    #advStatP {
+        width: 80%;
+    }
+
+    #brandSquare {
+        margin: 0;
+    }
+
+    #customizeSquare {
+        margin: 0;
+    }
+
+    .icon {
+        width: 40px;
+        top: -35px;
+    }
+
+    .squareTitle {
+        margin-bottom: 0;
+    }
+
+    #lineDiv {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(90deg);
+    }
+
+    .shortUrlDiv {
+        height: 150px;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    #advStatTitle {
+        margin-top: 0;
+    }
+
+    #form {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    #btnSubmit {
+        width: 100%;
+        margin: 0;
+        font-size: 18px;
+
+    }
+
+    #input {
+        margin: 0;
+        width: 100%;
+        padding: 0;
+
+    }
+
+    input::placeholder {
+        padding-left: 10px;
+        font-weight: 500;
+    }
+
+    #advStatDiv {
+        margin-top: 100px;
+    }
+
+    #shortenLinks {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 40px;
+        position: relative;
+    }
+
+    .urlDiv {
+        flex-direction: column;
+        width: 92%;
+        /* padding: 20px; */
+    }
+
+    .shortUrlBtn {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        position: relative;
+    }
+
+    .longUrl {
+        width: 100%;
+        margin-left: 0;
+        padding-left: 20px;
+    }
+
+    #shortUrl {
+        margin-left: 20px;
+    }
+
+    #copyBtn {
+        width: 90%;
+        margin: 0;
+        margin-bottom: 10px;
+        margin-left: 20px;
+    }
+
+    #mobileLineDivider {
+        position: absolute;
+        height: 1px;
+        background-color: hsl(257, 20%, 80%);
+        width: 92%;
+        margin: 0 auto;
+        top: 45%;
+    }
+
+    .getStartedDiv {
+        width: 90%;
+        align-self: center;
+        flex-direction: column;
+        overflow-x: hidden;
+
+
+    }
+
+    .getStartedInfo {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        order: 1;
+        margin-bottom: 30px;
+    }
+
+    .getStartedPic {
+        order: 0;
+        width: 90%;
+    }
+
+    #titleStartedInfo {
+        font-size: 55px;
+        text-align: center;
+        margin-top: 25px;
+    }
+
+    #pStartedInfo {
+        text-align: center;
+    }
+
+
+    @media (max-width: 600px) {
+        .container {
+            width: 85%;
+        }
+    }
+
+    @media (max-width: 500px) {
+        .container {
+            width: 100%;
+        }
+    }
