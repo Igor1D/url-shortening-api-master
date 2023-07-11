@@ -1,12 +1,12 @@
 const form = document.getElementById('form');
 const input = document.getElementById('input');
-let mobileMenuBtn = document.getElementById('menu-toggle');
-let nav = document.getElementById('nav');
+// let mobileMenuBtn = document.getElementById('menu-toggle');
+// let nav = document.getElementById('nav');
 
-mobileMenuBtn.addEventListener('click', ()=>{
-    nav.style.display = 'none';
+// mobileMenuBtn.addEventListener('click', ()=>{
+//     nav.style.display = 'none';
     
-})
+// })
 
 
 async function shortenUrl() {
