@@ -4,7 +4,7 @@ body {
     flex-direction: column;
     margin: 0;
     min-height: 100vh;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
 
 
 
@@ -120,6 +120,7 @@ p {
     height: 43px;
     border-radius: 5px;
     border: none;
+
 
 }
 
@@ -405,9 +406,7 @@ p {
     color: hsl(255, 11%, 22%);
 }
 
-header {
-    /* width: ; */
-}
+
 
 
 
@@ -592,7 +591,7 @@ header {
     }
 
     #btnSubmit {
-        width: 100%;
+        width: 106%;
         margin: 0;
         font-size: 18px;
 
@@ -601,7 +600,7 @@ header {
     #input {
         margin: 0;
         width: 100%;
-        padding: 0;
+        padding-left: 20px;
 
     }
 
@@ -703,8 +702,12 @@ header {
         }
     }
 
-    @media (max-width: 500px) {
+    @media (max-width: 450px) {
         .container {
             width: 100%;
         }
+
+
+
+
     }
