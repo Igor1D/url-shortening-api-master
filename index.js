@@ -1,5 +1,13 @@
 const form = document.getElementById('form');
 const input = document.getElementById('input');
+let mobileMenuBtn = document.getElementById('menu-toggle');
+let nav = document.getElementById('nav');
+
+mobileMenuBtn.addEventListener('click', ()=>{
+    nav.style.display = 'none';
+    
+})
+
 
 async function shortenUrl() {
     let results = await fetch(`https://api.shrtco.de/v2/shorten?url=${input.value}`);
@@ -7,31 +15,39 @@ async function shortenUrl() {
     let shortenLink = data.result.full_short_link3;
     let urlDiv = document.createElement('div');
     let shortenLinks = document.getElementById('shortenLinks');
+    let copyBtn = document.getElementById('copyBtn');
+    let shortUrl = document.getElementById('shortUrl');
     
     urlDiv.classList.add('urlDiv');
-    urlDiv.innerHTML = `<p class="longUrl">${input.value}</p> <div class="shortUrlBtn"><p id="shortUrl">${shortenLink}</p> <button id="copyBtn" class="mainBtn" onclick="copyFunction()">Copy</button></div>` + `<div id="mobileLineDivider"></div>`;
+    urlDiv.innerHTML = `<p class="longUrl">${input.value}</p> <div class="shortUrlBtn"><p id="shortUrl">${shortenLink}</p> <button id="copyBtn" class="mainBtn" onclick="copyFunction()">Copy</button></div>`;
     shortenLinks.appendChild(urlDiv);
-    let copyBtn = document.getElementById('copyBtn');
     
-//     function copyFunction() {
-//         let shortUrl = document.getElementById('shortUrl');
-//         // Create a fake `textarea` and set the contents to the text
-//   //    you want to copy
-//         let storage = document.createElement('textarea');
-//         storage.value = shortUrl.innerHTML;
-//         shortUrl.appendChild(storage);
-//         // Copy the text in the fake `textarea` and remove the `textarea`
-//         storage.select();
-//         storage.setSelectionRange(0, 99999);
-//         document.execCommand('copy');
-//         element.removeChild(storage);
 
+    // copyBtn.addEventListener('click', ()=> {
+    //     let storage = document.createElement('textarea');
+    //     storage.value = shortUrl.innerText;
+    //     shortUrl.appendChild(storage);
+    //     storage.select();
+    //     document.execCommand('copy');
+    //     document.body.removeChild(storage);
+    //     copyBtn.innerHTML = 'Copied!';
+    //     setTimeout(() => {
+    //         copyBtn.innerText = 'Copy';
+    //       }, 2000);
+    // })
 
-
-
-//     }
-    
-    console.log(copyBtn)
+    // function copyFunction(){
+    //     let storage = document.createElement('textarea');
+    //     storage.value = shortUrl.innerText;
+    //     shortUrl.appendChild(storage);
+    //     storage.select();
+    //     document.execCommand('copy');
+    //     document.body.removeChild(storage);
+    //     copyBtn.innerHTML = 'Copied!';
+    //     setTimeout(() => {
+    //         copyBtn.innerText = 'Copy';
+    //       }, 2000);
+    // }
 
 }
 
@@ -42,7 +58,14 @@ form.addEventListener('submit', (event) => {
 
     shortenUrl();
     
+    
 });
+
+// copyBtn.addEventListener('click', ()=> {
+
+//     copyFunction();
+
+// })
 
 
 
