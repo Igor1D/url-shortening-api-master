@@ -172,9 +172,10 @@ p {
 #greyBgDiv {
     position: absolute;
     top: 60px;
+    /* left: 0; */
     background-color: hsla(230, 25%, 95%, 1);
     width: 99.3vw;
-    height: 111vh;
+    height: 110vh;
     z-index: -1;
 }
 
@@ -319,6 +320,11 @@ p {
     padding-top: 80px;
 }
 
+#footer {
+    display: flex;
+  flex-shrink: 0;
+}
+
 #footerLogo {
     filter: brightness(0) invert(1);
     width: 170px;
@@ -348,6 +354,15 @@ p {
     width: 150px;
 
 
+}
+
+#shortenLinks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 40px;
+    /* overflow: auto; */
 }
 
 
@@ -438,6 +453,11 @@ p {
 
     #greyBgDiv {
         top: 74px;
+        height: 180vh;
+    }
+
+    #boostLinkDiv {
+        height: 25vh;
     }
 
     .container {
@@ -525,7 +545,7 @@ p {
 
     #footerDiv {
         flex-direction: column;
-        height: 50vh;
+        height: 60vh;
         align-items: center;
         padding-bottom: 30px;
         padding-top: 30px;
