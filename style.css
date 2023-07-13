@@ -15,6 +15,8 @@ header {
     justify-content: flex-start;
     /* border: 5px solid black; */
     min-height: 100px;
+    z-index: 5;
+    background-color: white;
 
 }
 
@@ -30,7 +32,7 @@ nav {
 
 }
 
-#menuToggleDiv {
+#menu-icon {
     display: none;
 }
 
@@ -71,6 +73,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 10px
 
 
 }
@@ -441,15 +444,81 @@ p {
     .linksDiv {
         gap: 10px;
     }
+
+    header {
+        min-height: 80px;
+
+    }
+
+    #illustImg {
+        margin-top: 50px;
+        width: 140%;
+    
+    
+    }
 }
+
 
 @media (max-width: 1000px) {
     .container {
         width: 75%;
     }
+    #headerLogoDiv {
+        padding-left: 20px;
+        width: 150px;
+    }
+
+    .linksDiv {
+        gap: 30px;
+
+    }
+
+    .navBtnsDiv {
+        margin-left: 30px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .linksDiv {
+        gap: 10px;
+
+    }
+    #headerLogo {
+        width: 450px;
+    }
+
+    .getStartedDiv{
+        overflow-x: hidden;
+    }
+
+    #illustImg {
+        width: 500px;
+    }
+
+    #titleStartedInfo{
+        font-size: 55px;
+    }
+
 }
 
 @media (max-width: 700px) {
+
+    #illustImg {
+        padding-left: 10px;
+    }
+
+    #menu-icon {
+        position: absolute;
+        display: block;
+        top: 10px;
+        right: 30px;
+        border: none;
+        background: none;
+        font-size: 50px;
+        cursor: pointer;
+    }
+
 
     #greyBgDiv {
         top: 74px;
@@ -470,7 +539,7 @@ p {
         padding-top: 10px;
         padding-bottom: 25px;
         position: absolute;
-        top: 100px;
+        top: -700px;
         flex-direction: column;
         background-color: hsl(257, 27%, 26%);
         border-radius: 15px;
@@ -480,6 +549,17 @@ p {
         height: 350px;
         justify-content: space-around;
         align-items: center;
+        transition: 0.2s;
+        z-index: 4;
+
+    }
+
+    .navShown {
+        top: 100px;
+
+
+
+
 
     }
 
@@ -521,26 +601,12 @@ p {
         margin: 0;
     }
 
-    #menuToggleDiv {
-        display: flex;
-        display: block;
-        position: relative;
-        /* width: 100px;
-    height: 100px; */
-    }
 
-    #menu-toggle {
-        bottom: 380px;
-        left: 170px;
-        position: absolute;
-        font-size: 50px;
-        color: hsl(0, 0%, 75%);
-        cursor: pointer;
-    }
 
     #headerLogoDiv {
         padding: 0;
         margin-left: 40px;
+        margin-top: 20px;
     }
 
     #footerDiv {
