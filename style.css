@@ -549,7 +549,7 @@ input::placeholder {
         position: absolute;
         top: -700px;
         flex-direction: column;
-        background-color:rgb(43, 21, 64);;
+        background-color:black;
         border-radius: 15px;
         width: 80%;
         margin: 0;
