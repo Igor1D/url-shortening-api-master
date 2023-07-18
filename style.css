@@ -525,7 +525,7 @@ input::placeholder {
         background: none;
         font-size: 50px;
         cursor: pointer;
-        background-color:hsl(255, 11%, 22%) ;
+        color:hsl(255, 11%, 22%) ;
     }
 
 
