@@ -525,6 +525,7 @@ input::placeholder {
         background: none;
         font-size: 50px;
         cursor: pointer;
+        background-color:hsl(255, 11%, 22%) ;
     }
 
 
@@ -549,7 +550,7 @@ input::placeholder {
         position: absolute;
         top: -700px;
         flex-direction: column;
-        background-color:black;
+        background-color: hsl(257, 27%, 26%);
         border-radius: 15px;
         width: 80%;
         margin: 0;
