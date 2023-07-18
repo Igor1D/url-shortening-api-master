@@ -407,7 +407,7 @@ p {
     margin-left: 30px;
 }
 
-#copyBtn {
+.copyBtn {
     margin-top: 0;
     margin-right: 15px;
     padding: 0;
@@ -417,6 +417,12 @@ p {
     width: 90px;
     height: 38px;
     cursor: pointer;
+
+    background-color: hsl(180, 66%, 49%);
+    border: none;
+
+    color: white;
+
 
 }
 
@@ -594,6 +600,8 @@ p {
     .navBtnsDiv {
         display: flex;
         flex-direction: column;
+        margin: 0;
+
 
     }
 
@@ -748,7 +756,7 @@ p {
         margin-left: 20px;
     }
 
-    #copyBtn {
+    .copyBtn {
         width: 90%;
         margin: 0;
         margin-bottom: 10px;
