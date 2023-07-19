@@ -435,7 +435,53 @@ input::placeholder {
     font-weight: 500;
 }
 
+#modalWindow {
+    display: none;
+    position: absolute;
+    width: 500px;
+    height: 100px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 0.100s ease-out, opacity 0.100s ease-out;
+    background-color:  hsl(255, 11%, 22%);
+    border-radius: 15px;
+    box-shadow: 0px 0px 76px -7px hsl(180, 83%, 16%);
+    opacity: 0;
+}
 
+#modalWindow.active {
+    display: flex;
+    transform: translate(-50%, -80%) scale(1);
+    opacity: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#modalWindowText {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    flex-direction: column;
+    width: 100%;
+    color: white;
+    font-size: 26px;
+
+}
+
+#excIconDiv {
+    display: flex;
+     align-items: center;
+    justify-content: center;
+}
+
+#excIcon {
+    width: 100px;
+    height: 70px;
+    filter: invert(1);
+}
 
 @media (max-width: 2000px) {
     .container {
