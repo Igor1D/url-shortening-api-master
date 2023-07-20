@@ -857,6 +857,30 @@ input::placeholder {
         padding: 0;
     }
 
+    #modalWindow {
+        top: 110%;
+        width: 90%;
+    }
+
+    #modalWindowText {
+        display: flex;
+        justify-content: center;
+        text-align: left;
+        flex-direction: column;
+        width: 100%;
+        color: white;
+        font-size: 20px;
+    
+    }
+    
+    #excIcon {
+        width: 100px;
+        height: 50px;
+        filter: invert(1);
+    }
+
+
+
     }
 
 
