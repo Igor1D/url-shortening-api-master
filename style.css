@@ -8,6 +8,8 @@ body {
 
 
 
+
+
 }
 
 header {
@@ -35,6 +37,7 @@ nav {
 
 #menu-icon {
     display: none;
+
 }
 
 #mobileLine {
@@ -75,8 +78,6 @@ nav {
     justify-content: center;
     align-items: center;
     gap: 10px
-
-
 }
 
 main {
@@ -98,7 +99,8 @@ main {
 
 #pStartedInfo {
     margin-top: 0;
-    font-size: 18px;
+    font-size: 28px;
+    font-weight: 400;
 }
 
 #illustImg {
@@ -140,6 +142,7 @@ p {
 .getStartedDiv {
     display: flex;
     flex-direction: row;
+    margin-bottom: 100px;
     /* height: 35vh; */
 
 }
@@ -196,9 +199,9 @@ p {
 }
 
 #advStatTitle {
-    margin-top: 100px;
+    margin-top: 55px;
     margin-bottom: 0;
-    font-size: 40px;
+    font-size: 46px;
     color: hsl(255, 11%, 22%);
 }
 
@@ -207,7 +210,7 @@ p {
     margin-bottom: 80px;
     text-align: center;
     width: 50%;
-    font-size: 18px;
+    font-size: 20px;
 }
 
 #squaresDiv {
@@ -298,7 +301,7 @@ p {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    height: 20vh;
+    height: 25vh;
     background-image: url(./images/bg-boost-desktop.svg);
     background-color: hsl(255, 11%, 22%);
     background-size: cover;
@@ -306,9 +309,9 @@ p {
 
 #boostTitle {
     color: white;
-    font-size: 40px;
+    font-size: 46px;
     font-weight: 600;
-    margin-bottom: 0;
+    margin-bottom: 20px;
     margin-top: 0;
 }
 
@@ -325,7 +328,7 @@ p {
 
 #footer {
     display: flex;
-  flex-shrink: 0;
+    flex-shrink: 0;
 }
 
 #footerLogo {
@@ -372,7 +375,7 @@ p {
 /* Btns */
 
 .mainBtn {
-    background-color: hsl(180, 66%, 49%);
+    background-color: hsl(180, 64%, 47%);
     border: none;
     border-radius: 25px;
     color: white;
@@ -380,12 +383,15 @@ p {
     font-weight: 600;
     width: 180px;
     height: 50px;
-    margin-top: 20px;
     cursor: pointer;
 }
 
+.mainBtn:hover {
+    background-color: hsl(180, 76%, 55%);
+}
+
 #btnSubmit {
-    background-color: hsl(180, 66%, 49%);
+    background-color: hsl(180, 64%, 47%);
     border: none;
     border-radius: 10px;
     color: white;
@@ -395,8 +401,10 @@ p {
     height: 45px;
     margin-left: 20px;
     cursor: pointer;
+}
 
-
+#btnSubmit:hover {
+    background-color: hsl(180, 76%, 55%);
 }
 
 #signUpBtn {
@@ -438,14 +446,14 @@ input::placeholder {
 
 #modalWindow {
     display: none;
-    position: absolute;
+    position: fixed;
     width: 500px;
     height: 100px;
-    top: 50%;
+    top: 53%;
     left: 50%;
     transform: translate(-50%, -50%) scale(0);
-    transition: transform 0.100s ease-out, opacity 0.100s ease-out;
-    background-color:  hsl(255, 11%, 22%);
+    /* transition: transform 0.100s ease-out, opacity 0.100s ease-out; */
+    background-color: hsl(255, 11%, 22%);
     border-radius: 15px;
     box-shadow: 0px 0px 76px -7px hsl(180, 83%, 16%);
     opacity: 0;
@@ -474,7 +482,7 @@ input::placeholder {
 
 #excIconDiv {
     display: flex;
-     align-items: center;
+    align-items: center;
     justify-content: center;
 }
 
@@ -508,8 +516,11 @@ input::placeholder {
     #illustImg {
         margin-top: 50px;
         width: 140%;
-    
-    
+    }
+
+    #pStartedInfo {
+        margin-top: 0;
+        font-size: 22px;
     }
 }
 
@@ -518,10 +529,17 @@ input::placeholder {
     .container {
         width: 75%;
     }
+
     #headerLogoDiv {
         padding-left: 20px;
         width: 150px;
     }
+
+    header {
+        gap: 50px;
+    }
+
+
 
     .linksDiv {
         gap: 30px;
@@ -531,6 +549,19 @@ input::placeholder {
     .navBtnsDiv {
         margin-left: 30px;
     }
+
+    #titleStartedInfo {
+        font-size: 60px;
+    }
+
+    .getStartedDiv {
+        overflow-x: hidden;
+    }
+
+    #illustImg {
+        width: 500px;
+    }
+
 }
 
 @media (max-width: 900px) {
@@ -539,11 +570,12 @@ input::placeholder {
         gap: 10px;
 
     }
+
     #headerLogo {
         width: 450px;
     }
 
-    .getStartedDiv{
+    .getStartedDiv {
         overflow-x: hidden;
     }
 
@@ -551,13 +583,20 @@ input::placeholder {
         width: 500px;
     }
 
-    #titleStartedInfo{
+    #titleStartedInfo {
         font-size: 55px;
     }
 
 }
 
 @media (max-width: 700px) {
+    .mainBtn {
+        pointer-events: none;
+    }
+
+    #btnSubmit {
+        pointer-events: none;
+    }
 
     #illustImg {
         padding-left: 10px;
@@ -572,7 +611,7 @@ input::placeholder {
         background: none;
         font-size: 50px;
         cursor: pointer;
-        color:hsl(255, 11%, 22%) ;
+        color: hsl(255, 11%, 22%);
     }
 
 
@@ -613,10 +652,6 @@ input::placeholder {
     .navShown {
         top: 100px;
 
-
-
-
-
     }
 
     #mobileLine {
@@ -624,7 +659,7 @@ input::placeholder {
         text-align: center;
         height: 1px;
         background-color: hsl(258, 6%, 35%);
-        width: 80%;
+        width: 0%;
         margin: 0 auto;
 
 
@@ -744,6 +779,7 @@ input::placeholder {
 
     #advStatTitle {
         margin-top: 0;
+        font-size: 40px;
     }
 
     #form {
@@ -778,7 +814,7 @@ input::placeholder {
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        margin-bottom: 40px;
+        margin-bottom: 65px;
         position: relative;
     }
 
@@ -849,7 +885,7 @@ input::placeholder {
         font-size: 55px;
         text-align: center;
         margin-top: 25px;
-        font-weight: 800 !important;
+        font-weight: 700;
     }
 
     #pStartedInfo {
@@ -858,10 +894,7 @@ input::placeholder {
         padding: 0;
     }
 
-    #modalWindow {
-        top: 110%;
-        width: 90%;
-    }
+
 
     #modalWindowText {
         display: flex;
@@ -871,9 +904,13 @@ input::placeholder {
         width: 100%;
         color: white;
         font-size: 20px;
-    
+
     }
-    
+
+    #modalWindow {
+        width: 90%;
+    }
+
     #excIcon {
         width: 100px;
         height: 50px;
@@ -882,36 +919,104 @@ input::placeholder {
 
 
 
+}
+
+
+@media (max-width: 600px) {
+    .container {
+        width: 95%;
+    }
+}
+
+@media (max-width: 450px) {
+    .container {
+        width: 100%;
+    }
+
+    #boostLinkDiv {
+        height: 45vh;
+    }
+
+    #advStatP {
+        font-size: 18px;
+    }
+
+    #greyBgDiv {
+        height: 310vh;
+    }
+
+    #menu-icon {
+        padding: 0;
+        position: absolute;
+        display: block;
+        width: 50px;
+        height: 50px;
+        top: 13px;
+        right: 15px;
+        border: none;
+        background: none;
+        font-size: 45px;
+        cursor: pointer;
+        color: hsl(255, 11%, 22%);
+    }
+
+    #modalWindow {
+        width: 95%;
+        height: 80px;
+        top: 60%;
+
+    }
+
+    #modalWindowText {
+        font-size: 18px;
+
+    }
+
+    #excIcon {
+        width: 85px;
+    }
+
+    #titleStartedInfo {
+        font-size: 45px;
+        font-weight: 700;
+        line-height: 55px;
+    }
+
+    .getStartedDiv {
+        margin-bottom: 20px;
+    }
+
+    #advStatTitle {
+        font-size: 34px;
+    }
+
+    #lineDiv {
+        position: absolute;
+        height: 10px;
+        width: 550px
+    }
+
+    #pStartedInfo {
+        font-size: 17px;
+        margin-bottom: 15px;
+
+    }
+
+    #boostTitle {
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    #footerDiv {
+        gap: 50px;
+        height: 80vh;
+        padding-top: 80px;
+    }
+
+    #headerLogoDiv {
+        width: 120px;
+        margin-left: 30px;
     }
 
 
-    @media (max-width: 600px) {
-        .container {
-            width: 95%;
-        }
-    }
-
-    @media (max-width: 450px) {
-        .container {
-            width: 100%;
-        }
-
-        #menu-icon {
-            position: absolute;
-            display: block;
-            width: 50px;
-            height: 50px;
-            top: 10px;
-            right: 15px;
-            border: none;
-            background: none;
-            font-size: 50px;
-            cursor: pointer;
-            color:hsl(255, 11%, 22%) ;
-            border: 5px solid;
-        }
-
-
-
-
-    }
+}
