@@ -590,13 +590,6 @@ input::placeholder {
 }
 
 @media (max-width: 700px) {
-    .mainBtn {
-        pointer-events: none;
-    }
-
-    #btnSubmit {
-        pointer-events: none;
-    }
 
     #illustImg {
         padding-left: 10px;
