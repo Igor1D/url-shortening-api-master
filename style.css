@@ -923,9 +923,6 @@ input::placeholder {
 
 @media (max-width: 450px) {
 
-    #mainBtn:hover {
-        background-color: initial;
-    }
 
     .container {
         width: 100%;
