@@ -58,9 +58,9 @@ form.addEventListener('submit', (event) => {
         setTimeout(() => {
             modalWindowDiv.style.display = 'flex';
         }, 100); 
-        // setTimeout(() => {
-        //     modalWindowDiv.style.display = 'none';
-        // },5000);
+        setTimeout(() => {
+            modalWindowDiv.style.display = 'none';
+        },5000);
   
     }
     
